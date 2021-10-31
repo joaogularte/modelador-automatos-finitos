@@ -1,0 +1,21 @@
+{
+  "conjunto_de_estados": ["q0", "q1", "q2"],
+  "alfabeto": ["a", "b"],
+  "transicoes_entre_estados": [{
+    "estado_atual": "q0",
+    "le": "a",
+    "proximo_estado": ["q1"]
+  },
+  {
+    "estado_atual": "q1",
+    "le": "a" | "ε",
+    "proximo_estado": ["q1"] | ["q1", "q2"] | null
+  },
+  {
+    "estado_atual": "q1",
+    "le": "b",
+    "proximo_estado": ["q2"]
+  }],
+  "estado_inicial": "q0",
+  "estados_finais": ["q1"]
+}
